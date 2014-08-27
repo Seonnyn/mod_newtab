@@ -3,6 +3,8 @@ var http = require('http');
 var async = require('async');
 var breach = require('breach_module');
 
+var port = 42424;
+
 var bootstrap = function(http_srv) {
   breach.init(function(cb_) {
     breach.expose('init', function(src, args, cb_) {
